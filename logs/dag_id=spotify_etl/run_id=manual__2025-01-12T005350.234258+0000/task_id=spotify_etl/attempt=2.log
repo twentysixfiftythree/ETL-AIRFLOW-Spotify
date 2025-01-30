@@ -1,0 +1,29 @@
+[2025-01-12T00:56:53.683+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_etl.spotify_etl manual__2025-01-12T00:53:50.234258+00:00 [queued]>
+[2025-01-12T00:56:53.720+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_etl.spotify_etl manual__2025-01-12T00:53:50.234258+00:00 [queued]>
+[2025-01-12T00:56:53.721+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2025-01-12T00:56:53.760+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): spotify_etl> on 2025-01-12 00:53:50.234258+00:00
+[2025-01-12T00:56:53.778+0000] {standard_task_runner.py:60} INFO - Started process 269 to run task
+[2025-01-12T00:56:53.790+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'spotify_etl', 'spotify_etl', 'manual__2025-01-12T00:53:50.234258+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/spotify_etl_dag.py', '--cfg-path', '/tmp/tmppu3skwiq']
+[2025-01-12T00:56:53.798+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask spotify_etl
+[2025-01-12T00:56:53.941+0000] {task_command.py:423} INFO - Running <TaskInstance: spotify_etl.spotify_etl manual__2025-01-12T00:53:50.234258+00:00 [running]> on host d9ce99263c32
+[2025-01-12T00:56:54.114+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spotify_etl' AIRFLOW_CTX_TASK_ID='spotify_etl' AIRFLOW_CTX_EXECUTION_DATE='2025-01-12T00:53:50.234258+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-12T00:53:50.234258+00:00'
+[2025-01-12T00:56:54.120+0000] {logging_mixin.py:188} INFO - Access token expired, refreshing...
+[2025-01-12T00:56:54.706+0000] {extract.py:10} INFO - Retrieved 7 tracks from Spotify
+[2025-01-12T00:56:54.708+0000] {transform.py:35} ERROR - Error transforming data: 'Track' object has no attribute 'id'
+[2025-01-12T00:56:54.709+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/spotify_etl_dag.py", line 16, in etl_process
+    transformed_songs, transformed_albums = transform_tracks(raw_data)
+  File "/opt/airflow/dags/etl/transform.py", line 13, in transform_tracks
+    'id': track.id,
+AttributeError: 'Track' object has no attribute 'id'
+[2025-01-12T00:56:54.746+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_etl, task_id=spotify_etl, execution_date=20250112T005350, start_date=20250112T005653, end_date=20250112T005654
+[2025-01-12T00:56:54.785+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task spotify_etl ('Track' object has no attribute 'id'; 269)
+[2025-01-12T00:56:54.806+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-01-12T00:56:54.844+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

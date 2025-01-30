@@ -1,3 +1,4 @@
 pycache,
 config,
-logs
+logs,
+config/__pycache__
