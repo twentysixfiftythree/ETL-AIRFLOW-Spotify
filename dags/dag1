@@ -1,0 +1,22 @@
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from airflow.providers.mysql.hooks.mysql import MySqlHook
+import logging
+from datetime import datetime
+from common.hooks.SpotifyHook import SpotifyHook
+from extract import fetch_and_insert_spotify
+
+
+# Define the DAG
+with DAG(
+    'extract_spotify',
+    default_args={'owner': 'airflow'},
+    schedule_interval=None,
+    start_date=datetime(2024, 12, 14),
+    catchup=False,  # Optional: Disable backfilling
+) as dag:
+
+    test_task = PythonOperator(
+        task_id='test_imports',
+        python_callable= fetch_and_insert_spotify
+    )
