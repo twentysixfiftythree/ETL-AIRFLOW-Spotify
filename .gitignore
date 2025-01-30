@@ -1,4 +1,25 @@
-pycache,
-config,
-logs,
-config/__pycache__
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuration files
+**/config/
+!**/config/*.template.py
+
+# Logs
+logs/
+*.log
+
+# Spotify specific
+**/spotify_config.py
+
+# Environment files
+.env
+.venv
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/

@@ -446,3 +446,59 @@
 [2025-01-30T00:33:37.029+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:33:37.028+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-01-30T00:33:37.111+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:33:37.110+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
 [2025-01-30T00:33:37.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 0.577 seconds
+[2025-01-30T00:34:07.564+0000] {processor.py:161} INFO - Started process (PID=6653) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:07.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:34:07.569+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:07.569+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:07.857+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:07.895+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:07.894+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:34:07.965+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:07.964+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:34:08.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 0.465 seconds
+[2025-01-30T00:34:41.965+0000] {processor.py:161} INFO - Started process (PID=6708) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:41.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:34:41.992+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:41.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:42.992+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:34:43.086+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:43.085+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:34:43.225+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:34:43.225+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:34:43.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 1.372 seconds
+[2025-01-30T00:35:13.367+0000] {processor.py:161} INFO - Started process (PID=6763) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:13.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:35:13.371+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:13.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:13.600+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:13.635+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:13.635+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:35:13.693+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:13.692+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:35:13.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 0.371 seconds
+[2025-01-30T00:35:44.583+0000] {processor.py:161} INFO - Started process (PID=6819) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:44.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:35:44.593+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:44.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:45.254+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:35:45.567+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:45.566+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:35:45.829+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:35:45.829+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:35:45.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 1.423 seconds
+[2025-01-30T00:36:19.478+0000] {processor.py:161} INFO - Started process (PID=6875) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:19.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:36:19.532+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:19.531+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:22.541+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:22.631+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:22.630+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:36:22.806+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:22.805+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:36:22.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 3.481 seconds
+[2025-01-30T00:36:53.480+0000] {processor.py:161} INFO - Started process (PID=6940) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:53.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:36:53.492+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:53.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:53.875+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:36:53.918+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:53.917+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:36:53.987+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:36:53.986+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:36:54.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 0.579 seconds
+[2025-01-30T00:37:24.634+0000] {processor.py:161} INFO - Started process (PID=6995) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:24.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:37:24.638+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:24.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:24.825+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:24.852+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:24.852+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:37:24.884+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:24.884+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:37:24.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 0.282 seconds
+[2025-01-30T00:37:55.534+0000] {processor.py:161} INFO - Started process (PID=7050) to work on /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:55.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_etl_dag.py for tasks to queue
+[2025-01-30T00:37:55.549+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:55.548+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:56.534+0000] {processor.py:840} INFO - DAG(s) 'spotify_etl' retrieved from /opt/airflow/dags/spotify_etl_dag.py
+[2025-01-30T00:37:56.603+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:56.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-01-30T00:37:56.771+0000] {logging_mixin.py:188} INFO - [2025-01-30T00:37:56.771+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_etl to 2025-01-30 00:00:00+00:00, run_after=2025-01-31 00:00:00+00:00
+[2025-01-30T00:37:57.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_etl_dag.py took 1.505 seconds
