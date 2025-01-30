@@ -1,14 +1,15 @@
 # Python cache files
-__pycache__/
-*.py[cod]
-*$py.class
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # Configuration files
 **/config/
 !**/config/*.template.py
 
 # Logs
-logs/
+**/logs/
 *.log
 
 # Spotify specific
